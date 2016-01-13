@@ -3,7 +3,14 @@
 {% block body %}
     <div id="wrapper">
         <div id="container">
-          This is a test
+          <h1>Successfully setup error routing.</h1>
+          <p>
+            Trigger 404 error: <a href="/doesnotexit">Demonstrate</a>
+          </p>
+
+          <p>
+            Trigger 500 error: <a href="/givemea500">Demonstrate</a>
+          </p>
         </div>
     </div>
 {% endblock %}

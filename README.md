@@ -1,6 +1,10 @@
 # php-symfony-error-routing
 A basic and lean recipe for implementing error routing in a Symfony3.
 
+Run this in different modes (dev and prod) to use the different template files. In
+<strong><code>dev</code></strong> mode, the <strong><code>exception</code></strong> 
+templates are used. In <strong><code>prod</code></strong> mode, the <strong><code>error</code></strong> templates are used.
+
 Dependencies
 -
 git  

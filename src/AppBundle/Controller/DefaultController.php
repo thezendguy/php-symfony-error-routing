@@ -18,4 +18,12 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
         ]);
     }
+    
+    /**
+     * @Route("/givemea500", name="givemea500")
+     */
+    public function givemea500Action(Request $request)
+    {
+      throw new Exception('Test exception');
+    }
 }
