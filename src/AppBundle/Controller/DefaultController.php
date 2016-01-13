@@ -24,6 +24,6 @@ class DefaultController extends Controller
      */
     public function givemea500Action(Request $request)
     {
-      throw new Exception('Test exception');
+      throw new \Exception('Test exception');
     }
 }
