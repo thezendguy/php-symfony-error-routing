@@ -1,0 +1,28 @@
+{# app/Resources/TwigBundle/views/Exception/exception.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>A CUSTOM EXCEPTION OCCURRED</h1>
+    
+    <span>
+      Note that:
+    </span>
+    <ul>
+      <li>In dev mode, the 'exception.*.twig' templates are used</li>
+      <li>In prod mode, the 'error*.twig' templates are used.
+    </ul>
+    
+    <p>
+      This is the custom exception template used for exceptions thrown in 'dev' mode.
+    </p>
+    <p>
+      Location: app/Resources/TwigBundle/views/Exception/exception.html.twig
+    </p>
+    <p>
+      If no custom exception templates are used, then the default Twig exception templates 
+      will be used in the following location:
+      <br>
+      <br>
+      vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views/Exception/
+    </p>
+{% endblock %}
